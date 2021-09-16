@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  rabbitmq:
+    host: 101.200.77.223
+    port: 5672
+    username: admin
+    password: admin
+    #配置虚机
+    #virtual-host: Inner
+    #确认消息已发送到队列
+    publisher-returns: true
+    #确认消息已发送到交换机
+    publisher-confirm-type: correlated
